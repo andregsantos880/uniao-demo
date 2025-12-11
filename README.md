@@ -25,9 +25,3 @@ Implementação em React inspirada no site original [uniao.com.br](https://uniao
 - Workflow `.github/workflows/firebase-hosting.yml` executa `npm install`, `npm run build` e faz deploy com o Firebase CLI.
 - Configure o segredo `FIREBASE_TOKEN` no repositório (Gerado com `firebase login:ci` na conta do projeto) antes de executar o workflow.
 - A ação roda automaticamente em pushes para `main` ou manualmente via `workflow_dispatch`.
-
-## Observações de fidelidade
-- Paleta de cores, tipografia Montserrat/Playfair e layout seguem o visual da marca.
-- Imagens usam carregamento preguiçoso e textos alternativos para acessibilidade.
-- Rotas replicam a navegação principal: produtos, receitas, história, sustentabilidade, blog e contato.
-- Componentes são carregados de forma lazy para melhorar performance.
