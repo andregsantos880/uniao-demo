@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 64" role="img" aria-labelledby="title desc">
+  <title id="title">Logo União</title>
+  <desc id="desc">Marca União com arco verde e tipografia vermelha.</desc>
+  <rect width="180" height="64" fill="white" rx="12" ry="12" />
+  <path d="M24 32c0-14 10-24 24-24h84c14 0 24 10 24 24s-10 24-24 24H48c-14 0-24-10-24-24Z" fill="#f8f3eb" />
+  <path d="M46 16h88c9.2 0 16 6 16 16s-6.8 16-16 16H46c-9.2 0-16-6-16-16s6.8-16 16-16Z" fill="none" stroke="#2e7c2c" stroke-width="6" stroke-linecap="round" />
+  <text x="90" y="41" text-anchor="middle" font-family="'Montserrat', 'Helvetica', 'Arial', sans-serif" font-weight="700" font-size="34" fill="#c8102e" letter-spacing="1">
+    UNIÃO
+  </text>
+</svg>
