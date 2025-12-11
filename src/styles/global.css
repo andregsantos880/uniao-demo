@@ -1,0 +1,148 @@
+@import url('./variables.css');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+  color: var(--color-text);
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+button {
+  font-family: inherit;
+}
+
+main {
+  min-height: 60vh;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-title {
+  font-size: clamp(28px, 3vw, 38px);
+  margin: 0 0 12px;
+  color: var(--color-primary-dark);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.section-subtitle {
+  color: var(--color-muted);
+  margin: 0 0 24px;
+  font-size: 16px;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.hero-text {
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+}
+
+.tagline {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--color-cream);
+  color: var(--color-secondary);
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 20px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  color: #fff;
+  box-shadow: 0 14px 34px rgba(200, 16, 46, 0.3);
+}
+
+.btn-secondary {
+  background: #fff;
+  border: 2px solid var(--color-secondary);
+  color: var(--color-secondary);
+}
+
+.btn:hover,
+.btn:focus-visible {
+  transform: translateY(-2px);
+}
+
+.card {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: var(--shadow-soft);
+}
+
+.highlight {
+  color: var(--color-primary);
+}
+
+.section-bg {
+  background: var(--color-cream);
+  padding: 72px 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .section-bg {
+    padding: 48px 0;
+  }
+}
