@@ -1,0 +1,55 @@
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  align-items: center;
+  gap: 32px;
+  padding: 32px 0 20px;
+}
+
+.imageWrap {
+  position: relative;
+}
+
+.heroImage {
+  border-radius: 30px;
+  box-shadow: var(--shadow-soft);
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.accentCard {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  background: #fff;
+  padding: 14px 16px;
+  border-radius: 16px;
+  box-shadow: var(--shadow-soft);
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.stats {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.statItem {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.statCircle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-secondary);
+}
