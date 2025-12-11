@@ -20,8 +20,8 @@ Implementação em React inspirada no site original [uniao.com.br](https://uniao
 - `src/styles` – estilos globais e variáveis de tema.
 - `public` – assets estáticos, incluindo o logo da marca.
 
-## Observações de fidelidade
-- Paleta de cores, tipografia Montserrat/Playfair e layout seguem o visual da marca.
-- Imagens usam carregamento preguiçoso e textos alternativos para acessibilidade.
-- Rotas replicam a navegação principal: produtos, receitas, história, sustentabilidade, blog e contato.
-- Componentes são carregados de forma lazy para melhorar performance.
+## Publicação no Firebase Hosting via GitHub Actions
+- O projeto já inclui `firebase.json` e `.firebaserc` apontando para o site `andregsantos880` e build estático em `dist`.
+- Workflow `.github/workflows/firebase-hosting.yml` executa `npm install`, `npm run build` e faz deploy com o Firebase CLI.
+- Configure o segredo `FIREBASE_TOKEN` no repositório (Gerado com `firebase login:ci` na conta do projeto) antes de executar o workflow.
+- A ação roda automaticamente em pushes para `main` ou manualmente via `workflow_dispatch`.
